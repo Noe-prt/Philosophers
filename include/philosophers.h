@@ -10,7 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
 #include <pthread.h>
+
+struct s_philosophers
+{
+    int number_of_philosophers;
+    useconds_t time_to_die;
+    useconds_t time_to_eat;
+    useconds_t time_to_sleep;
+    int numbers_of_time_each_philosophers_must_eat;
+}           t_philosophers;
