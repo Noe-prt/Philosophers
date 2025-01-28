@@ -6,18 +6,11 @@
 /*   By: nopareti <nopareti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 23:27:40 by nopareti          #+#    #+#             */
-/*   Updated: 2025/01/27 23:42:22 by nopareti         ###   ########.fr       */
+/*   Updated: 2025/01/28 17:26:56 by nopareti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/philosophers.h"
-
-void    init_philosophers(char **argv)
-{
-    t_philosophers philosophers;
-
-    philosophers.number_of_philosophers = ft_atoi(argv[1]);
-}
 
 int main(int argc, char **argv)
 {
