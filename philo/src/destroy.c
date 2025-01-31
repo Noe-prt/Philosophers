@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   philo.c                                            :+:      :+:    :+:   */
+/*   destroy.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nopareti <nopareti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/28 17:27:05 by nopareti          #+#    #+#             */
-/*   Updated: 2025/01/28 17:27:05 by nopareti         ###   ########.fr       */
+/*   Created: 2025/01/29 17:08:04 by nopareti          #+#    #+#             */
+/*   Updated: 2025/01/29 17:08:04 by nopareti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philosophers.h"
+#include "../include/philosophers.h"
 
-void	*philo_routine()
+void	destroy_forks_mutex(pthread_mutex_t *forks, int num_philos)
 {
-	usleep(2000);
-	printf("philo routine\n");
-	return (NULL);
+	int	i;
+
+	i = 0;
+	while (i < num_philos)
+	{
+		pthread_mutex_destroy(&forks[i]);
+		i++;
+	}
 }
 
-t_philo	create_philo()
+void	destroy_program_mutex(t_program *program)
 {
-	t_philo	philo;
-
-
-	pthread_create(&philo.thread, NULL, philo_routine, NULL);
-	pthread_join(philo.thread, NULL);
-	return (philo);
+	pthread_mutex_destroy(&program->meal_lock);
+	pthread_mutex_destroy(&program->dead_lock);
+	pthread_mutex_destroy(&program->write_lock);
 }

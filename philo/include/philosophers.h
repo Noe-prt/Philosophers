@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nopareti <nopareti@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/27 23:27:40 by nopareti          #+#    #+#             */
-/*   Updated: 2025/01/28 17:30:33 by nopareti         ###   ########.fr       */
+/*   Created: 2025/01/28 23:30:07 by nopareti          #+#    #+#             */
+/*   Updated: 2025/01/31 15:58:58 by nopareti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <pthread.h>
+#include <sys/time.h>
 
 typedef struct s_philo
 {
@@ -44,3 +45,29 @@ typedef struct s_program
 	pthread_mutex_t	write_lock;
 	t_philo			*philos;
 }					t_program;
+
+#ifndef NUM_MAX_OF_PHILO
+#define NUM_MAX_OF_PHILO 200
+#endif
+
+int		ft_atoi(const char *str);
+void    *philo_routine(void *arg);
+int     ft_usleep(size_t milliseconds);
+size_t	get_current_time(void);
+void    init_philosophers(t_philo *philosophers, char **argv, t_program *program, pthread_mutex_t *forks);
+void	init_program(t_program *program, t_philo *philos);
+void	init_forks(pthread_mutex_t *forks, int num_philos);
+void 	*philo_routine(void *arg);
+void 	destroy_forks_mutex(pthread_mutex_t *forks, int num_philos);
+void 	destroy_program_mutex(t_program *program);
+void	*monitor_routine(void *arg);
+void	protected_message(char *str, t_philo *philo, int id);
+int		is_philo_dead(t_philo *philo, size_t time_to_die);
+int		check_philos_dead(t_philo *philos);
+int		check_dead(t_philo *philo);
+void	create_and_join_threads(t_program *program);
+int		check_inputs_errors(int argc, char **argv);
+int		check_philos_dead(t_philo *philos);
+int		is_philo_dead(t_philo *philo, size_t time_to_die);
+int		check_all_philos_ate(t_philo *philos);
+int		check_dead(t_philo *philo);
