@@ -54,8 +54,6 @@ Exemple :
 
 ## 🔥 Exemples de Sortie
 
-_Ajoutez ici des captures d'écran ou des exemples de sortie du programme_
-
 ![Exemple de simulation](https://i.ibb.co/Z6Y3qqZS/philo2.png)
 
 ## 📊 Paramètres
@@ -76,4 +74,4 @@ _Ajoutez ici des captures d'écran ou des exemples de sortie du programme_
 
 Projet réalisé par :
 
-- [Votre nom ou pseudo](https://github.com/Noe-prt)
+- [Noe-prt](https://github.com/Noe-prt)
