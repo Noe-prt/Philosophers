@@ -56,7 +56,7 @@ Exemple :
 
 _Ajoutez ici des captures d'écran ou des exemples de sortie du programme_
 
-![Exemple de simulation](https://ibb.co/0jFkHHwK)
+![Exemple de simulation](https://i.ibb.co/Z6Y3qqZS/philo2.png)
 
 ## 📊 Paramètres
 
