@@ -1,8 +1,0 @@
-{
-    "C_Cpp.errorSquiggles": "disabled",
-    "files.associations": {
-        "philosophers.h": "c",
-        "stdio.h": "c",
-        "stdlib.h": "c"
-    }
-}
