@@ -30,7 +30,7 @@ Votre mission est d'implémenter une simulation de ce problème en respectant le
 Cloner le dépôt :
 
 ```bash
-git clone https://github.com/votre_nom/philosophers.git
+git clone https://github.com/Noe-prt/Philosophers.git
 cd philosophers
 ```
 
