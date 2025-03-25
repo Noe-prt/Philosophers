@@ -1,6 +1,6 @@
 # Philosophers
 
-![Philosophers Dining Problem](https://www.google.com/url?sa=i&url=https%3A%2F%2Ffr.m.wikipedia.org%2Fwiki%2FFichier%3AAn_illustration_of_the_dining_philosophers_problem.png&psig=AOvVaw0vZKq_OZxX5JrGr_8d5uvj&ust=1742950225519000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKD2k9qBpIwDFQAAAAAdAAAAABAE)
+![Philosophers Dining Problem](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/An_illustration_of_the_dining_philosophers_problem.png/578px-An_illustration_of_the_dining_philosophers_problem.png)
 
 Un projet de l'école **42** qui explore les problèmes de concurrence en implémentant la solution classique du **problème des philosophes mangeurs**.
 
